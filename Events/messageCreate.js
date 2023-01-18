@@ -13,9 +13,4 @@ module.exports = async(bot, message) => {
             
         }
     })
-    console.log(message.content)
-    db.query(`INSERT INTO espionage (server, message) VALUES ("${message.guild.id}", "${message.content}")`)
-
-
-
 }

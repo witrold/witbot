@@ -64,7 +64,7 @@ module.exports = {
     
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        try {await user.send({ embeds: [muteserveur] })} catch(err) {}
+        try {await user.send({ embeds: [mutepriver] })} catch(err) {}
 
         await message.reply({ embeds: [muteserveur] })
 

@@ -20,9 +20,9 @@ module.exports = async (bot, interaction) => {
             let choices = ["on", "off"]
             let sortie = choices.filter(c => c.includes(entry))
             await interaction.respond(entry === "" ? sortie.map(c => ({name: c, value: c})) : sortie.map(choice => ({name: c, value: c})))
-        }
+       }
     }
-    
+
     if(interaction.type === Discord.InteractionType.ApplicationCommand) {
         
         const command = interaction.client.commands.get(interaction.commandName);
