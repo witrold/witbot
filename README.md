@@ -2,4 +2,4 @@
 
 Bot discord multifonction en cours de création 
 
-Version : 0.9
+Version : 0.9.2
