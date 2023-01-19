@@ -7,7 +7,7 @@ const Player = require('discord-player')
 const config = require('./config')
 require(`./anti-crash.js`)();
 
-bot.version = "0.9"
+bot.version = "0.9.4"
 bot.color = "DarkBlue";
 bot.function = {
     generateCaptcha: require("./Fonctions/generateCaptcha")

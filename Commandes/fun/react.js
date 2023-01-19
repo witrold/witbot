@@ -28,7 +28,7 @@ module.exports = {
     let user = args.getUser("membre")
     let action = args.get("action").value;
  
-    const allowedActions = ["hug", "kiss", "cuddle", "feed", "pat", "poke", "slap", "smug", "tickle", "wink", "kill", "suck"];
+    const allowedActions = ["hug", "kiss", "cuddle", "feed", "pat", "poke", "slap", "smug", "tickle", "wink", "kill"];
  
     // Vérifiez si l'action demandée est dans la liste des actions autorisées
     if (!allowedActions.includes(action)) {

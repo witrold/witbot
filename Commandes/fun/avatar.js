@@ -24,9 +24,9 @@ module.exports = {
         .setColor(bot.color)
         .setTitle(`${user.username}`)
         .setDescription(`Avatar de ${user.tag}`)
-       .setTimestamp()
+        .setTimestamp()
         .setImage(user.displayAvatarURL({size: 512}))
-    .setFooter({ text: `Avatar de ${user.tag}`, iconURL: (user.displayAvatarURL({dynamic: true}))});
+        .setFooter({ text: `Avatar de ${user.tag}`, iconURL: (user.displayAvatarURL({dynamic: true}))});
         message.reply({embeds: [exampleEmbed]});
     }
 }

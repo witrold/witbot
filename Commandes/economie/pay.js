@@ -28,7 +28,7 @@ module.exports = {
 
         try {
 
-            let user = await bot.users.fetch(args._hoistedOptions[0].value)
+            let user = args.getUser('membre')
             
             let argent = args.getNumber("argent")
             
@@ -54,7 +54,6 @@ module.exports = {
                                     
                                 compte = req[0].argent 
                                 resultat = compte - argent
-                                console.log(resultat)
 
                                 if (resultat >= 0){
                                     db.query(`UPDATE compte SET argent = ${resultat} WHERE membre = '${message.user.id}'`)

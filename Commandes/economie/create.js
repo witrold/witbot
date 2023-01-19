@@ -30,6 +30,8 @@ module.exports = {
 
                 db.query(`INSERT INTO compte (guild, membre, argent) VALUES ('${message.guild.id}','${message.user.id}', '0')`)
 
+                db.query(`INSERT INTO inventaire (membre, guild, jeton) VALUES ('${message.user.id}','${message.guild.id}','0')`)
+
                 await message.reply({embeds: [embed_argent]})}
                 
                 else await message.reply({embeds: [embed_echec]})
